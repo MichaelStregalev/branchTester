@@ -1,10 +1,23 @@
+#include "menu.h"
 #include <iostream>
 
 int main()
 {
-	std::cout << "Hello My World!" << std::endl;
+	printMenu();
 
-	std::cout << "VERSION 0.0.1" << std::endl;
+	std::string command = "";
+
+	while (command != "exit")
+	{
+		try
+		{
+			std::cin >> command;
+		}
+		catch (const std::exception& e)
+		{
+			std::cout << e.what() << std::endl;
+		}
+	}
 
 	return 0;
 }
