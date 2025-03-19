@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "stringHelper.h"
 #include <iostream>
 
 int main()
@@ -12,6 +13,7 @@ int main()
 		try
 		{
 			std::cin >> command;
+			toLowerCase(command);
 		}
 		catch (const std::exception& e)
 		{
