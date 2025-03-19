@@ -8,5 +8,5 @@ void printMenu()
 	std::cout << "\tnew <project_name> <author>" << std::endl;
 	std::cout << "\tshow <project_name>" << std::endl;
 	std::cout << "\tdelete <project_name>" << std::endl;
-	std::cout << "\tmodify <project_name> <new_name>" << std::endl;
+	std::cout << "\tmodify <project_name> <new_name>\n" << std::endl;
 }
